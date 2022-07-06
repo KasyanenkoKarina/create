@@ -1,0 +1,116 @@
+.header {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  z-index: 100;
+}
+
+.header::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: linear-gradient(55.95deg, $orange-red 0%, $orange 100%);
+  opacity: 0.2;
+}
+
+.wrapper-header-menu {
+  @include space-between;
+  padding-top: 20px;
+}
+
+.wrapper-logo {
+  @include space-between;
+}
+
+.logo-image {
+  max-width: 130px;
+  max-height: 22px;
+  height: 100%;
+  z-index: 100;
+  margin-right: 60px;
+}
+
+.list-menu,
+.wrapper-register,
+.wrapper-log-in {
+  @include flex-center;
+}
+
+.wrapper-link-button {
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button-lg {
+  color: $white;
+  letter-spacing: 0.5px;
+  background: linear-gradient(55.95deg, $orange-red 0%, $orange 100%);
+  margin-right: 37px;
+
+  &:hover {
+    color: $orange-red;
+    border: 1px solid $orange-red;
+    background: transparent;
+  }
+}
+
+.header-login-image {
+  max-width: 17px;
+  max-height: 18px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.wrapper-section-about {
+  @include flex-box;
+  margin-top: 128px;
+}
+
+.wrapper-section-about {
+  .col-md {
+    margin-right: 165px;
+  }
+  .col-md:last-child {
+    margin-right: 0;
+  }
+}
+
+.play-showreel-image {
+  max-width: 84px;
+  max-height: 84px;
+  height: 100%;
+}
+
+.title-section-about {
+  padding: 24px 0 60px 0;
+  word-break: break-word;
+}
+
+.button-md {
+  border: 1px solid $orange-red;
+  color: $orange-red;
+  background: transparent;
+  margin-right: 20px;
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(55.95deg, $orange-red 0%, $orange 100%);
+  }
+}
+
+.header-image {
+  max-width: 602px;
+  max-height: 551px;
+}
+
+.list-about {
+  @include flex-box;
+}

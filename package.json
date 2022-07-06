@@ -1,0 +1,19 @@
+{
+  "name": "createX",
+  "author": "Kasyanenko Karina",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp-image": "^6.3.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.2"
+  }
+}

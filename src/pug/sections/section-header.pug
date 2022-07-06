@@ -1,0 +1,33 @@
+header(class="header wrapper-background-header")
+    div(class="container wrapper-header")
+        .wrapper-header-menu
+            .wrapper-logo
+                img(src="./images/logo.png", alt="logo-image", class="logo-image")
+                .wrapper-menu
+                    - const menuItems = [{name: 'About Us', link: '#'}, {name: 'Courses', link: '#'}, {name: 'Events', link: '#'}, {name: 'Blog', link: '#'}, {name: 'Contacts', link: '#'}];
+                    ul.list-menu
+                        each menuItem in menuItems
+                            include ../includes/include-header-menu.pug
+            .wrapper-register
+                a(href="#" class="wrapper-link-button button-lg font-weight-md") Get consultation
+                .wrapper-log-in 
+                    img(src="./images/header-login.svg", alt="header-login-image", class="header-login-image")
+                    a(class="link-menu font-weight-md font-size-16 text-header") Log in 
+                    span(class="font-weight-md font-size-16 text-header") /
+                    a(class="link-menu font-weight-md font-size-16 text-header") Register
+        .wrapper-section-about 
+            .col-md
+                .wrapper-text-section-about 
+                    .wrapper-play-showreel
+                        img(src="./images/play-showreel.svg", alt="play-showreel-image", class="play-showreel-image")
+                        span(class="font-size-14 font-weight-md text-play-showreel") Play showreel
+                    h1(class="font-size-64 font-weight-lg title-section-about") Enjoy studying with Createx Online Courses
+                    a(href="#" class="wrapper-link-button button-md font-weight-md") About us
+                    a(href="#" class="wrapper-link-button button-lg font-weight-md") Explore courses 
+            .col-md 
+                img(src="./images/header-image.svg", alt="header-image", class="header-image")
+        .wrapper-section-about 
+            - const aboutItems = [{numeric: 1200, text: "Students graduated"}, {numeric: 84, text: "Completed courses"}, {numeric: 16, text: "Qualified tutors"}, {numeric: 5, text: "Years of experience"}];
+            ul.list-about 
+                each aboutItem in aboutItems 
+                    include ../includes/include-section-about.pug
